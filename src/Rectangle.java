@@ -3,6 +3,8 @@ import java.awt.Point;
 
 public class Rectangle extends Polygon{
 
+	
+
 	/**
 	 * 
 	 * @param pointUL is the starting point for the rectangle being drawn 
