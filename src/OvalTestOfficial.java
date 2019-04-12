@@ -20,11 +20,11 @@ public class OvalTestOfficial
     
     private Circle c1 = new Circle(new Point(200, 300), 60, Color.BLUE, true);
     private Circle c2 = new Circle(new Point(200, 300), 75, Color.RED, false);
-
+    
     /**
      * Verify the affects of the constructor for the Oval and Circle
      * The location, the diameter(s), the color, and the filled flag
-     */
+     */ 
     @Test
     public void testOvalConstructorPoint()
     {
