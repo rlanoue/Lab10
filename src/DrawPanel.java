@@ -1,16 +1,78 @@
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.util.ArrayList;
 
-public class DrawPanel {
+import javax.swing.JFrame;
+import javax.swing.JPanel; 
 
+public class DrawPanel extends JPanel {
+
+	private ArrayList<Shape> shapeList; 
+
+	private Font fB14 = new Font("Copperplate Gothic Light", Font.BOLD, 14); 
+
+	static int xValue1 = 200; 
+	static int yValue1 = 150; 
 	
-	@Override
-	protected void paintComponent(Graphics g)
-	{
-		super.paintComponent((java.awt.Graphics) g);
-		Graphics2D g2d = (Graphics2D) g; 
-		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		g2d.drawString("Moo", x, y);//(x, y, 30, 30);
+	static int xValue2 = 150; 
+	static int yValue2 = 200; 
+	
+	private void moveText() {
+		xValue1 += 2; 
+		yValue1 += -2; 
+		if (yValue1 == 90 )
+		{
+			yValue1 = 150; 
+			xValue1 = 200; 
+		}
+		xValue2 += 2; 
+		yValue2 += -2; 
+		if (yValue2 == 140 )
+		{
+			yValue2 = 150; 
+			xValue2 = 200; 
+		}
 	}
+
+	public void addShape(Shape shape) {
+		shapeList.add(shape); 
+	}
+
+	protected void paintComponent(Graphics graphics) {
+
+	}
+//
+	public static void main(String[] args) throws InterruptedException {
+
+		
+		DrawFrame.animatedFrame(); 
+		JFrame frame = new JFrame("Graphics Demo");
+		DrawFrame animation = new DrawFrame("Animated!"); 
+		frame.add(animation); 
+		frame.setSize(400, 400);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		while(true) 
+		{
+			animation.moveText(); 
+			animation.repaint();  
+			Thread.sleep(50); 
+		}
+	}
+	@Override
+		public void paint(Graphics g)
+		{
+			super.paint(g);
+			Graphics2D g2d = (Graphics2D) g; 
+			g2d.setFont(fB14);
+			g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+			g2d.drawString("Zzz", xValue1, yValue1);
+			g2d.drawString("Zzz", xValue2, yValue2); 
+	}
+	
+	//
+	
 }
