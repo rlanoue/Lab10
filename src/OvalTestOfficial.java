@@ -57,7 +57,7 @@ public class OvalTestOfficial
         Assert.assertEquals("Incorrect diameter2 for the Oval", 100, o1.getDiameter2());
         Assert.assertEquals("Incorrect diameter1 for the Circle", 75, o2.getDiameter1());
         Assert.assertEquals("Incorrect diameter2 for the Circle", 50, o2.getDiameter2());
-
+ 
         Assert.assertEquals("Incorrect diameter for the Cirlce", 60, c1.getDiameter());
         Assert.assertEquals("Incorrect diameter1 for the Circle", 60, c1.getDiameter1());
         Assert.assertEquals("Incorrect diameter2 for the Circle", 60, c1.getDiameter2());

@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author Monique Shotande
  * @version April 11, 2019
  * Lab 10
- */
+ */ 
 public class DiamondTestOfficial
 {
     // Setup

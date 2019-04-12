@@ -2,6 +2,10 @@ import java.awt.Graphics;
 
 public interface Drawable {
 	
-	void draw(Graphics graphics);
+	/**
+	 * interface for being able to draw a shape
+	 * @param graphics
+	 */
+	public void draw(Graphics graphics);
 	
 }

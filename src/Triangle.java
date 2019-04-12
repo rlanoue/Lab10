@@ -22,7 +22,7 @@ public abstract class Triangle extends Polygon
 	public Triangle(Point pointLB, Color color, boolean filled) 
 	{
 		super(color, filled);
-        
+       
         location = new Point[3];
         
         // Define lower base point

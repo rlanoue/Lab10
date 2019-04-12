@@ -7,7 +7,7 @@ public abstract class Polygon extends Shape{
 	{
 		super(color, filled); 
 	}
-
+ 
 	public void draw(Graphics g) {
 		int[] xPoints = new int[location.length];
 		int[] yPoints = new int[location.length]; 
