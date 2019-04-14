@@ -11,11 +11,12 @@ import javax.swing.JPanel;
 
 public class DrawPanel extends JPanel {
 
-	private ArrayList<Shape> shapeList; 
+	private ArrayList<Shape> shapeList = new ArrayList<Shape>(); 
 
 	//private static Font fB14 = new Font("Copperplate Gothic Light", Font.BOLD, 14); 
 
 	public void addShape(Shape shape) {
+	
 		shapeList.add(shape); 
 	}
 

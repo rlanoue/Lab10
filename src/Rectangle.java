@@ -18,9 +18,10 @@ public class Rectangle extends Polygon{
 		// TODO Auto-generated constructor stub
 		location = new Point[4];
 		location[0] = pointUL;
-		location[1] = new Point((int) location[0].getX() + width, (int) location[1].getY()); //UR 
-		location[2] = new Point((int) location[2].getX(), (int) location[2].getY() + height); //DL
-		location[3] = new Point((int) location[3].getX() + width, (int) location[3].getY() + height); //DR
+		location[1] = new Point((int) location[0].getX() + width, (int) location[0].getY()); //UR 
+		location[2] = new Point((int) location[0].getX() + width, (int) location[0].getY() + height); //DR
+		location[3] = new Point((int) location[0].getX(), (int) location[0].getY() + height); //DL
+		
 	}
 
 }
