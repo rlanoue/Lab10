@@ -6,9 +6,11 @@ public class RightTriangle extends Triangle{
 
 	public RightTriangle(Point pointRA, int base, int height, Color color, boolean filled) {
 		super(pointRA, color, filled);
-		// TODO Auto-generated constructor stub
-		this.base = base; 
-		this.height = height; 
+		
+		location = new Point[3]; 
+		location[0] = pointRA; 
+		location[1] = new Point ((int) pointRA.getX() + base, (int) pointRA.getY()); 
+		location[2] = new Point ((int) pointRA.getX(), (int) pointRA.getY() + height);  
 	}
 
 }
