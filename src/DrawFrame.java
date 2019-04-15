@@ -89,7 +89,7 @@ public class DrawFrame extends JFrame {
 		
 		this.add(drawPanel);
 		
-		PanelToImage.makePanelImage(drawPanel, "Lab 10 Java Picture", "png");
+		PanelToImage.makePanelImage(drawPanel, "Lab10JavaPicture", "png");
 	}
 	
 		public static void main(String[] args) throws IOException {
