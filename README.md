@@ -1,3 +1,3 @@
 # Lab10
 
-![myimage](Lab10JavaPicture.png)
+![myimage](Lab10JavaPicture)
