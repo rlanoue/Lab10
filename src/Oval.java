@@ -49,6 +49,9 @@ public class Oval extends Shape{
 	public void draw(Graphics graphics) {
 		graphics.setColor(getColor());
 		graphics.drawOval((int) location[0].getX(),(int) location[0].getY(), diameter1, diameter2); 
-		graphics.fillOval((int) location[0].getX(),(int) location[0].getY(), diameter1, diameter2);
+		if (isFilled() == true) {
+		graphics.fillOval((int) location[0].getX(),(int) location[0].getY(), diameter1, diameter2);}
+	
+			
 	}
 }
