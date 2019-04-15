@@ -35,7 +35,7 @@ public class SinusoidTest
 
 	/**
 	 * Test method for {@link Shape#getColor()}.
-	 */
+	 */ 
 	@Test
 	public void testGetColor() 
 	{

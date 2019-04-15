@@ -101,7 +101,7 @@ public class Sinusoid extends Shape
         int nPoints = location.length;
          
         // TODO: Draw a sequence of connected line segments to render a sinusoid
-        g2d.drawPolyline(x, y, nPoints);
+        g2d.drawPolyline(xNext, y, nPoints);
 	}
 
 }

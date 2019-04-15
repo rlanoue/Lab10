@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  * 
  * @author Andrew H. Fagg
  * @version October 26, 2017
- * Lab 10
+ * Lab 10 
  */
 public class PanelToImage
 {

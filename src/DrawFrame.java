@@ -6,6 +6,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.RenderingHints;
+import java.io.IOException;
+
 import javax.swing.JPanel; 
 /**
  * 
@@ -19,9 +21,9 @@ public class DrawFrame extends JFrame {
 
 	private static Font fB14 = new Font("Copperplate Gothic Light", Font.BOLD, 14); 
 	
-	public DrawFrame(String title){
+	public DrawFrame(String title) throws IOException{
 		super(title); 
-	//	JFrame window = new JFrame("LAB10"); 
+	//	JFrame window = new JFrame("LAB10");  
 		setFont(fB14);
 		setSize(600, 700);
 		setVisible(true);
@@ -86,12 +88,16 @@ public class DrawFrame extends JFrame {
 		drawPanel.addShape(trunk);
 		
 		this.add(drawPanel);
+		
+		PanelToImage.makePanelImage(drawPanel, "Lab 10 Java Picture", "png");
 	}
 	
-		public static void main(String[] args) {
+		public static void main(String[] args) throws IOException {
 			DrawFrame frame = new DrawFrame("Picture"); 
 			
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
+		
 		}
 	}
 

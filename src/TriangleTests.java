@@ -16,7 +16,7 @@ public class TriangleTests {
 	private static Point pointRA2 = new Point(75, 50); 
 	private static RightTriangle rFilled = new RightTriangle(new Point(20, 20), 6, 8, Color.ORANGE, true);
 	
-	private static int base3 = 3;
+	private static int base3 = 3; 
 	private static int height3 = 7;
 	private static Point pointLB1 = new Point(15, 5); 
 	private static IsoscelesTriangle iDrawn = new IsoscelesTriangle(new Point(20, 20), 5, 7, Color.MAGENTA, false);
