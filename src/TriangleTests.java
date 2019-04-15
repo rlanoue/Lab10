@@ -8,29 +8,23 @@ public class TriangleTests {
 
 	private static int base = 3;
 	private static int height = 4;
-	//private static Point pointRA10 = new Point(23, 20); 
-	//private static Point pointRA11 = new Point(20, 20); 
+	
 	private static RightTriangle rDrawn = new RightTriangle(new Point(20, 20), 3, 4, Color.YELLOW, false);
 
-
 	private static int base2 = 3;
-	private static int height2 = 8;
+	private static int height2 = 8; 
 	private static Point pointRA2 = new Point(75, 50); 
 	private static RightTriangle rFilled = new RightTriangle(new Point(20, 20), 6, 8, Color.ORANGE, true);
-
 	
 	private static int base3 = 3;
 	private static int height3 = 7;
 	private static Point pointLB1 = new Point(15, 5); 
 	private static IsoscelesTriangle iDrawn = new IsoscelesTriangle(new Point(20, 20), 5, 7, Color.MAGENTA, false);
 
-	
 	private static int base4 = 3;
 	private static int height4 = 2;
 	private static Point pointLB2 = new Point(5, 15); 
 	private static IsoscelesTriangle iFilled = new IsoscelesTriangle(new Point(20, 20), 1, 2, Color.PINK, true);
-	
-	
 	
 	@Test
 	public void triangleTests()
@@ -70,6 +64,4 @@ public class TriangleTests {
 		Assert.assertEquals(true, iFilled.isFilled());
 		
 	}
-
-
 }

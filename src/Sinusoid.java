@@ -74,11 +74,13 @@ public class Sinusoid extends Shape
 			
 			// TODO: calculate next x,y point
 			//y = yOffset + amplitude * sin(radians)
-			//x = xOffset + i * dx;
-			int xNext = new Point((int) location[0].getX() + (int) amplitude, (int) location[0].getY() + (int) amplitude));  // TODO:
-			int yNext = ... // TODO:
+			//x = xOffset + i * dx; 
+			int xNext = (x0 + i) * dx;  
+					//new Point((int) location[0].getX() + (int) amplitude, (int) location[0].getY() + (int) amplitude));  // TODO:
+			int yNext = (int) (y0 + (amplitude * Math.sin(rad)));// TODO:
 			
 			// TODO: create a point and store it into the locations list
+			location[i] = new Point(xNext, yNext); 		
 		}
 	}
 
@@ -97,9 +99,9 @@ public class Sinusoid extends Shape
 		g2d.setStroke(new BasicStroke(5));
         
         int nPoints = location.length;
-        
+         
         // TODO: Draw a sequence of connected line segments to render a sinusoid
-
+        g2d.drawPolyline(x, y, nPoints);
 	}
 
 }

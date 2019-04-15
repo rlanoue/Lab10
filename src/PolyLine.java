@@ -15,7 +15,7 @@ public class PolyLine extends Polygon {
  * @param filled - determines if its filled or outlined 
  */
 	public PolyLine(Point pointUL, Point pointUR, int thickness, Color color, boolean filled){
-		super(color, filled); 	
+		super(color, filled); 	 
 		location = new Point[4]; 
 		location[0] = pointUL;
 		location[1] = pointUR; 

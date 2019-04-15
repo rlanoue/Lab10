@@ -30,7 +30,7 @@ public class PolyLineTest
     private static Point pl2LR = new Point(100, 75);
 
     /**
-     * plectangle construction
+     * plectangle construction 
      */
     @Test
     public void testPolyLineConstructorPointsArrayLength()
