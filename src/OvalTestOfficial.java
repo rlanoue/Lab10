@@ -33,7 +33,7 @@ public class OvalTestOfficial
         Assert.assertEquals("Quantity of points defining the Oval is more than 1", 1, o2.getLocation().length);
         Assert.assertEquals("Quantity of points defining the Circle is more than 1", 1, c1.getLocation().length);
         Assert.assertEquals("Quantity of points defining the Circle is more than 1", 1, c2.getLocation().length);
-
+ 
         // Verify the location for each shape
         Assert.assertEquals("Incorrect location for the Oval", new Point(100, 100), o1.getLocation()[0]);
         Assert.assertEquals("Incorrect location for the Oval", new Point(100, 100), o2.getLocation()[0]);

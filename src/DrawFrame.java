@@ -53,10 +53,9 @@ public class DrawFrame extends JFrame {
 		Circle lEye = new Circle(new Point(130, 110), 50, Color.white, true); 
 		Circle rEye = new Circle(new Point(220, 110), 50, Color.WHITE, true);
 
-		Circle lPupil = new Circle(new Point(150, 130), 10, Color.black, true); 
-		Circle rPupil = new Circle(new Point(240, 130), 10, Color.black, true);
+		Diamond lPupil = new Diamond(new Point(150, 135), 10, Color.black, true); 
+		Diamond rPupil = new Diamond(new Point(240, 135), 10, Color.black, true);
 
-		
 		IsoscelesTriangle beak = new IsoscelesTriangle(new Point(175, 175), 55, 60, Gold, true); 
 		
 		IsoscelesTriangle lfoot = new IsoscelesTriangle(new Point(130, 470), 55, -60, Gold, true); 
@@ -86,22 +85,11 @@ public class DrawFrame extends JFrame {
 		drawPanel.addShape(branch);
 		drawPanel.addShape(trunk);
 		
-		
-		
-		
-		
-		
-		
-		//drawPanel.addShape(rec);
-		//drawPanel.addShape(diamon);
-		
-		
 		this.add(drawPanel);
 	}
 	
 		public static void main(String[] args) {
 			DrawFrame frame = new DrawFrame("Picture"); 
-			
 			
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		}
