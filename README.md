@@ -4,4 +4,4 @@
 
 Looks like you may have ot view the video raw and then download it
 
-![photo](updatedLab10Photo.png)
+![photo](updatedLab10Photo.PNG)
